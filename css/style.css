@@ -46,8 +46,25 @@ body {
 .navbar .container .nav-link:hover {
   color: var(--secondary-color);
 }
+.searchInput {
+  margin-right: 1rem;
+  padding: 1px 5px;
+  border-radius: 0.4rem;
+  transform: translateX(215px);
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+}
+.searchInput:focus {
+  border: 2px solid var(--secondary-color);
+}
+.showInput {
+  transform: translateX(0px) !important;
+  display: block !important;
+}
 .search {
   border-left: 1px solid var(--secondary-color);
+  cursor: pointer;
 }
 .search svg {
   color: var(--secondary-color);

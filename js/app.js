@@ -3,6 +3,13 @@ let bars = document.querySelector(`.navbar-toggler`);
 let show = document.querySelector(`.navbar-collapse`);
 let li = document.querySelectorAll(`.projects .container ul li`);
 
+let searchIcon = document.querySelector(".search");
+let searchInput = document.querySelector(".searchInput");
+
+searchIcon.addEventListener("click", () => {
+  searchInput.classList.toggle("showInput");
+});
+
 links.forEach((i) => {
   i.addEventListener(`click`, () => {
     bars.setAttribute(`aria-expanded`, `false`);
